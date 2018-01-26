@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <BGcanvas></BGcanvas>
     <SlideMenu></SlideMenu>
     <img src="./assets/logo.png">
     <router-view/>
@@ -8,9 +9,13 @@
 
 <script>
 import SlideMenu from "./components/common/SlideMenu"
+import BGcanvas from "./components/common/BGcanvas"
+
+
 export default {
   components:{
-    SlideMenu
+    SlideMenu,
+    BGcanvas
   },
   data() {
     return {
@@ -41,5 +46,8 @@ ul{
 a{
   text-decoration: none;
   color: #000;
+}
+p{
+  margin: 0;
 }
 </style>

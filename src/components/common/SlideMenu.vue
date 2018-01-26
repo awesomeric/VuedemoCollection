@@ -27,6 +27,7 @@ export default {
 <style lang="less" scoped>
 @vue-green: #62B587;
 .slide-menu {
+    z-index: 999;
     position: fixed;
     width: 250px;
     height: 100%;

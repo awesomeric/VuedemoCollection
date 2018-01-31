@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld';
 import count from '@/components/count';
 import Main from '@/components/Main'
 import Intro from '@/components/Intro'
+import Lifecycle from '@/components/Lifecycle'
 
 Vue.use(Router);
 
@@ -29,7 +30,11 @@ export default new Router({
       path: '/introduction',
       name: 'Intro',
       component: Intro,
+    },
+    {
+      path: '/lifecycle',
+      name: 'Lifecycle',
+      component: Lifecycle
     }
-
   ],
 });

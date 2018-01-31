@@ -1,11 +1,24 @@
 <template>
 <div class="slide-menu" :class="{hide:isHide}">
   <ul>
-    <li>
+
+    <li class="classId">
+      <router-link to="/introduction">
       <div class="context">
-        <router-link to="/introduction">简介</router-link>
+        简介
       </div>
+      </router-link>
     </li>
+
+    <li class="classId">
+      <router-link to="/lifecycle">
+      <div class="context">
+        Vue2.0生命周期勾子
+      </div>
+      </router-link>
+    </li>
+
+
   </ul>
   <div class="moveto" @click="isHide=!isHide">
     <i class="arrow"></i>
@@ -45,6 +58,7 @@ export default {
         height: 30px;
         line-height: 30px;
         border-radius: 4px;
+        margin-top: 10px;
         a:hover {
             color: @vue-green;
         }

@@ -20,8 +20,8 @@ LogBackground.prototype._initDom = function (opt) {
     circleMoveminX: -2,
     circleMovemaxY: 2,
     circleMoveminY: -2,
-    canvasWidth: document.documentElement.clientWidth || document.body.Width,
-    canvasHeight: document.documentElement.clientHeight || document.body.client,
+    canvasWidth: document.body.clientWidth || document.body.Width,
+    canvasHeight: document.body.clientHeight || document.body.client,
   };
   if (opt) {
     for (const key in opt) {

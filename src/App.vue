@@ -37,7 +37,8 @@ export default {
   color: #2c3e50;
   margin: 0 auto;
 }
-body{
+html,body{
+  height: 100%;
   margin: 0;
 }
 ul{

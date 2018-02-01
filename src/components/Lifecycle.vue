@@ -21,18 +21,29 @@
   </div>
   <div class="timeline">
     <div class="state-item" v-for="state in VueState">
-      <span class="line-between"></span>
-      {{state}}
+      <span class="line-between"></span> {{state}}
     </div>
+  </div>
+  <div class="md-content" v-html="md">
+
   </div>
 </div>
 </template>
 
 <script>
+import {
+  markdown
+} from 'markdown';
+  import  test1Md from '@/markdown/test2.md';
 export default {
+
+  mounted() {
+    // console.log(markdown.toHTML("../assets/articles/test1.md"));
+  },
   data() {
     return {
-      VueState: ['beforeCreate', 'created', 'beforeMount', 'mounted', 'beforeUpdate', 'updated', 'beforeDestroy', 'destroyed']
+      VueState: ['beforeCreate', 'created', 'beforeMount', 'mounted', 'beforeUpdate', 'updated', 'beforeDestroy', 'destroyed'],
+      md: test1Md
     }
   }
 
@@ -63,14 +74,13 @@ export default {
         margin-top: 20px;
 
     }
-    .timeline{
-      .state-item{
-        display: inline-block;
-        width: 150px;
-        .line-between{
-          
+    .timeline {
+        .state-item {
+            display: inline-block;
+            width: 150px;
+            .line-between {
+                }
         }
-      }
     }
 }
 </style>
